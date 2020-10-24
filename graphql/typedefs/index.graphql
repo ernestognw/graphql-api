@@ -1,0 +1,21 @@
+# Custom Scalars
+scalar Date
+
+# Directives
+directive @paginate on FIELD_DEFINITION
+
+type Query {
+  # Task
+  tasks(params: QueryParams): Tasks! @paginate
+  task(id: ID!): Task
+
+  # Date
+  serverDate: Date!
+}
+
+type Mutation {
+  # Task
+  createTask(task: TaskCreateInput!): Task!
+  updateTask(id: ID!, task: TaskUpdateInput!): Task!
+  deleteTask(id: ID!): Boolean!
+}
