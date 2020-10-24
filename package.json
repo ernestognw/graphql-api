@@ -15,12 +15,10 @@
     "@graphql-tools/schema": "^7.0.0",
     "@graphql-tools/utils": "^7.0.0",
     "apollo-server-express": "^2.18.2",
-    "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "graphql": "14.7.0",
-    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.10",
     "mongoose-delete": "^0.5.2",
     "signale": "^1.4.0"
