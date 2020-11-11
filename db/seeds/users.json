@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "5f0cca3fd995ca9f66e341c0",
+    "password": "$2a$10$df9rYR.WpJS6WlAJH.W7IOMraiefTw7igXFloszdxJHLMLeH4pBjq",
+    "firstName": "Ernesto",
+    "lastName": "García",
+    "email": "ernesto@blockdemy.com",
+    "profileImg": "https://blockdemy-id.s3.us-east-2.amazonaws.com/users/5e67297b5de02d85cfa4b7f1/1597983282841..jpg"
+  },
+  {
+    "_id": "5f0cca3fd995ca9f66e341c1",
+    "password": "$2a$10$df9rYR.WpJS6WlAJH.W7IOMraiefTw7igXFloszdxJHLMLeH4pBjq",
+    "firstName": "Rafael",
+    "lastName": "Ochoa",
+    "email": "rafael@blockdemy.com"
+  },
+  {
+    "_id": "5f0cca3fd995ca9f66e341c2",
+    "password": "$2a$10$df9rYR.WpJS6WlAJH.W7IOMraiefTw7igXFloszdxJHLMLeH4pBjq",
+    "firstName": "Marco",
+    "lastName": "Muñoz",
+    "email": "mark@blockdemy.com"
+  }
+]

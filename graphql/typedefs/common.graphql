@@ -1,5 +1,5 @@
 # Interface
-interface TimeStamps {
+interface Timestamps {
   createdAt: Date!
   updatedAt: Date!
 }

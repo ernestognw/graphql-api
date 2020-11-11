@@ -5,17 +5,16 @@ scalar Date
 directive @paginate on FIELD_DEFINITION
 
 type Query {
-  # Task
-  tasks(params: QueryParams): Tasks! @paginate
-  task(id: ID!): Task
+  # User
+  users(params: QueryParams): Users! @paginate
+  user(id: ID!): User
 
   # Date
   serverDate: Date!
 }
 
 type Mutation {
-  # Task
-  createTask(task: TaskCreateInput!): Task!
-  updateTask(id: ID!, task: TaskUpdateInput!): Task!
-  deleteTask(id: ID!): Boolean!
+  # User
+  createUser(user: UserCreate!): User!
+  updateUser(id: ID!, user: UserUpdate!): User!
 }

@@ -13,7 +13,8 @@
   "plugins": ["prettier", "import"],
   "rules": {
     "import/no-unresolved": [0],
-    "import/prefer-default-export": [0]
+    "import/prefer-default-export": [0],
+    "no-underscore-dangle": [0]
   },
   "parser": "babel-eslint"
 }

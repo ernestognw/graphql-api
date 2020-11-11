@@ -1,14 +1,12 @@
-// Task
-import taskQueries from './task/queries';
-import taskMutations from './task/mutations';
+import { userQueries, userMutations } from './user';
 
 const resolvers = {
   Query: {
-    ...taskQueries,
+    ...userQueries,
     serverDate: () => new Date().toISOString(),
   },
   Mutation: {
-    ...taskMutations,
+    ...userMutations,
   },
 };
 
