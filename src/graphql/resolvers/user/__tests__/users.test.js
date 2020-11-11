@@ -43,6 +43,16 @@ describe('Testing user queries', () => {
     await createDBConnection();
   });
 
+  // Actions to take before each test
+  beforeEach(async () => {
+    await User.insertMany(users);
+  });
+
+  // Actions to take after each test
+  afterEach(async () => {
+    await User.deleteMany({});
+  });
+
   // Actions to take after all tests
   // No need to change it
   afterAll(async () => {
@@ -50,16 +60,6 @@ describe('Testing user queries', () => {
   });
 
   describe('Query users', () => {
-    // Actions to take before each test
-    beforeEach(async () => {
-      await User.insertMany(users);
-    });
-
-    // Actions to take after each test
-    afterEach(async () => {
-      await User.deleteMany({});
-    });
-
     it('should return users', async () => {
       const {
         data: {
@@ -76,16 +76,6 @@ describe('Testing user queries', () => {
   });
 
   describe('Query user', () => {
-    // Actions to take before each test
-    beforeEach(async () => {
-      await User.insertMany(users);
-    });
-
-    // Actions to take after each test
-    afterEach(async () => {
-      await User.deleteMany({});
-    });
-
     it('should return existent user', async () => {
       const userIndex = 2;
       const id = users[userIndex]._id;
