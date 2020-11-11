@@ -1,6 +1,7 @@
 {
   "env": {
-    "es6": true
+    "es6": true,
+    "jest/globals": true
   },
   "extends": ["airbnb-base", "prettier"],
   "parserOptions": {
@@ -10,7 +11,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["prettier", "import"],
+  "plugins": ["prettier", "import", "jest"],
   "rules": {
     "import/no-unresolved": [0],
     "import/prefer-default-export": [0],

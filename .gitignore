@@ -118,3 +118,4 @@ dist
 # Mongo Local files
 data
 dump
+globalConfig.json

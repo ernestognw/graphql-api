@@ -4,11 +4,12 @@
     [
       "module-resolver",
       {
-        "root": ["."],
+        "root": ["./src"],
         "alias": {
-          "@config": "./config",
-          "@db": "./db",
-          "@graphql": "./graphql"
+          "@config": "./src/config",
+          "@db": "./src/db",
+          "@tests": "./src/tests",
+          "@graphql": "./src/graphql"
         }
       }
     ]

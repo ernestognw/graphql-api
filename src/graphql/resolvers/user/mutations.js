@@ -21,6 +21,7 @@ const userMutations = {
       { $set: { ...user } },
       { new: true }
     );
+
     return resolveUser.one(updatedUser, loaders);
   },
 };
